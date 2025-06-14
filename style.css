@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  form input,
+  form button {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+  #result {
+        background: rgba(255, 255, 255, 0.3);  /* translucent white */
+        border-radius: 16px;
+        padding: 1.5rem;
+        max-width: 400px;
+        margin: 2rem auto;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: #000; /* Ensures text is visible */
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+      #result * {
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+      }
+      
+      
+  
+  
+  #result img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #result p {
+    margin: 0.5rem 0;
+  }
+  
+  /* 🌙 Dark Mode (only colors) */
+  body.dark-mode {
+    background-color: #121212;
+    color: #eeeeee;
+  }
+  
+  /* Dark Mode toggle button */
+  #toggle-theme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.4rem 1rem;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  body.dark-mode #toggle-theme {
+    background-color: #ddd;
+    color: #111;
+  }
+  /* ⏳ Loader Style */
+#loader {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    animation: pulse 1s infinite;
+  }
+  /* 🌤 Weather-based background themes */
+body.clear {
+    background: linear-gradient(to top, #87ceeb, #ffffff);
+  }
+  
+  body.clouds {
+    background: linear-gradient(to top, #d3d3d3, #f5f5f5);
+  }
+  
+  body.rain {
+    background: linear-gradient(to top, #5f9ea0, #a9c9ff);
+  }
+  
+  body.snow {
+    background: linear-gradient(to top, #e0f7fa, #ffffff);
+  }
+  
+  body.mist {
+    background: linear-gradient(to top, #b0c4de, #dcdcdc);
+  }
+  
+  body.thunderstorm {
+    background: linear-gradient(to top, #2c3e50, #4ca1af);
+  }
+  
+  body.drizzle {
+    background: linear-gradient(to top, #a1c4fd, #c2e9fb);
+  }
+  
+  /* Optional: slightly dim text on bright backgrounds */
+  body.clear,
+  body.snow,
+  body.drizzle {
+    color: #333;
+  }
+  
+  body.rain,
+  body.thunderstorm,
+  body.clouds,
+  body.mist {
+    color: #f0f0f0;
+  }
+  
+  
+  body.dark-mode #loader {
+    color: #ccc;
+  }
+  
+  @keyframes pulse {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+  }
+  /* ✨ Fade-in Slide Animation */
+.fade-in {
+    animation: fadeInSlide 0.6s ease-out;
+  }
+  
+  @keyframes fadeInSlide {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #extra {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    padding-left: 0.5rem;
+  }
+  
+  
+  
